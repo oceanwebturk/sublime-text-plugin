@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[Route::get("/$1",function(){
+ // Code...
+});]]></content>
+<tabTrigger>Route::get</tabTrigger>
+<scope>source.php</scope>
+<description>Basic get route.</description>
+</snippet>
