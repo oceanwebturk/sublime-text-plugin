@@ -1,9 +1,6 @@
-import os
-import shlex
-import subprocess
 import sublime
 import sublime_plugin
+from .oceanwebturk_commands import *
 
-class OceanWebTurk():
-    def run():
-        print("Coder")
+if __name__ == '__main__':
+   sublime.Window.register_command("oceanwebturk_commands",OceanWebTurkCommands)
