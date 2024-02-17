@@ -9,19 +9,19 @@ project_data = sublime.active_window().project_data()
 project_folder = project_data['folders'][0]['path']
 current_project_folder = project_folder+"/"
 current_project_config_file = project_folder+"/oceanwebturk.json"
+current_project_config_folder = project_folder+"/.oceanwebturk/"
 
-if os.path.exists(current_project_config_file):
-  oceanwebturk_configs = json.loads(open(current_project_config_file, 'r').read()) 
-else:
-  oceanwebturk_configs = {}
-
-OceanWebTurk.load({
+oceanwebturk_configs={
  "current_project_folder": current_project_folder,
  "current_project_config_file": current_project_config_file,
- "configs": oceanwebturk_configs,
  "project_data": project_data,
- "sublime_configs": "OceanWebTurk.sublime-settings"
-})
+ "sublime_configs" : "OceanWebTurk.sublime-settings"
+}
+
+if os.path.exists(current_project_config_file):
+  oceanwebturk_configs.update(json.load(open(current_project_config_file,'r')))
+
+OceanWebTurk.load(oceanwebturk_configs)
 OceanWebTurk.boot()
 
 if __name__ == '__main__':
