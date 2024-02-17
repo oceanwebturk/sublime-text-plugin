@@ -1,0 +1,8 @@
+<snippet>
+<content><![CDATA[Route::match(["GET","POST"],"/$2",function(){
+ // Code...
+});]]></content>
+<tabTrigger>Route::match</tabTrigger>
+<scope>source.php</scope>
+<description>Basic post route.</description>
+</snippet>

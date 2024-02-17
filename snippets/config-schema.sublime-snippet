@@ -5,7 +5,7 @@ defined("REAL_BASE_DIR") or die;
 return [
  'key' => 'value',
 ];]]></content>
-<tabTrigger>owt-make:config</tabTrigger>
+<tabTrigger>Config::schema</tabTrigger>
 <scope>source.php</scope>
 <description>Basic a config schema</description>
 </snippet>
