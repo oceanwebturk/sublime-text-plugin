@@ -1,3 +1,6 @@
+NAME = "OceanWebTurk"
+VERSION = "1.0"
+
 # Import Librarys
 import os
 import json

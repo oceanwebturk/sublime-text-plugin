@@ -1,6 +1,3 @@
-NAME = "OceanWebTurk"
-VERSION = "1.0"
-
 import os
 import json
 import sublime,sublime_api, sublime_plugin
